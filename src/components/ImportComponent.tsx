@@ -29,7 +29,7 @@ const ImportComponent: FC<ActionProps> = ({ resource }) => {
       await new ApiClient().resourceAction({
         method: 'post',
         resourceId: resource.id,
-        actionName: 'import',
+        actionName: 'Importar',
         data: importData,
       });
 

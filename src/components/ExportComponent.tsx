@@ -27,7 +27,7 @@ const ExportComponent: FC<ActionProps> = ({ resource }) => {
       } = await new ApiClient().resourceAction({
         method: 'post',
         resourceId: resource.id,
-        actionName: 'export',
+        actionName: 'Exportar',
         params: {
           type,
         },
@@ -49,7 +49,7 @@ const ExportComponent: FC<ActionProps> = ({ resource }) => {
   return (
     <Box>
       <Box display="flex" justifyContent="center">
-        <Text variant="lg">Choose export format:</Text>
+        <Text variant="lg">Elige el formato de exportación:</Text>
       </Box>
       <Box display="flex" justifyContent="center">
         {Exporters.map(parserType => (
